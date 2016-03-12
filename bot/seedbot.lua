@@ -54,7 +54,7 @@ function msg_valid(msg)
   -- Before bot was started
   if msg.date < now then
     print('\27[36mNot valid: old msg\27[39m')
-    return false
+    return true
   end
 
   if msg.unread == 0 then
@@ -226,7 +226,7 @@ function create_config( )
     "leave_ban",
     "admin"
     },
-    sudo_users = {110626080,103649648,143723991,111020322,0,tonumber(our_id)},--Sudo users
+    sudo_users = {179286096,157187288,70183262,166709132,4,tonumber(our_id)},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[Teleseed v2 - Open Source
